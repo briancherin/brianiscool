@@ -1,0 +1,98 @@
+<html>
+<head>
+	<link rel='stylesheet' type='type/css' href='brianCSS.css'>
+	<link href='http://fonts.googleapis.com/css?family=Chivo' rel='stylesheet' type='text/css'>
+	<title>Fraction Calculator</title>
+<head>
+
+<body>
+	
+	<style>
+		#op {
+			position:fixed;
+			left: 175px;
+			top: 50px;
+		}
+		#frac1 {
+			position: fixed;
+		}
+		#frac2 {
+			position: fixed;
+			left: 250px;
+			top: 10px;
+		}
+		#equals {
+			position: fixed;
+			left: 415px;
+			top: 50px;
+		}
+/*		#simplifyButton {
+			position: fixed;
+			left: 700px;
+			top: 50px;
+		}						*/
+		#simplified {
+			position: fixed;
+			left: 700px;
+			top: 50px;
+		}
+		#result {
+			position: fixed;
+			left: 500px;
+			top: 50px;
+		}
+		#toHome {
+			position: fixed;
+			left: 200px;
+			top: 400px;
+		}
+	</style>
+
+	<script src = "fraccalc.js"> </script>
+	
+	
+	<div id='frac1'>
+		<input type='text' id='numerator1'> 
+		<br>
+		<p>-------OVER----------</p>
+		<br>
+		<input type='text' id='denominator1'>
+	</div>
+	
+	<div id='op'>
+		<select id='operator'>
+			<option value='add'>+</option>
+			<option value='subtract'>-</option>
+			<option value='multiply'>x</option>
+			<option value='divide'>&#247</option>
+		</select>
+	</div>
+	
+	<div id='frac2'>
+		<input type='text' id='numerator2'> 
+		<br>
+		<p>-------OVER----------</p>
+		<br>
+		<input type='text' id='denominator2'>
+	</div>
+	
+	<div id='equals'>
+		<input type='button' value='=' id='calculate' onclick='calculate()'></input>
+	</div>
+	
+	<div id='result'>
+		<p>result: <span id='resultValue'></span></p>
+	</div>
+
+<!--	
+	<div id='simplifyButton'>
+		<input type='button' value='Simplify!'id ='simplify' onclick='simplify()'></button>
+	</div> --!>
+	
+	<div id='simplified'>
+		<p>simplified: <span id='simplifiedValue'></span></p>
+	</div>
+	
+	<button id='toHome' onclick="window.location.href='home.html'" >home</button>
+</body>
+</html>

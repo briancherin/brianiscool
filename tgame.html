@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head><link rel='stylesheet' type='text/css' href='tgame.css'>
+<title>Brian is cool.</title>
+</head>
+<body>
+<script src = "tgame.js"> </script>
+
+
+<p id='title'> Have fun. </p>
+
+
+<div id = 'hungerBar'>
+	<div id = 'hungerProgressBar'>Hunger</div>
+</div>
+
+<div id = 'inventory'>
+	<h1>Inventory</h>
+	<p>money: $<span id='money'>10</span></p>
+	<p id = 'seedsLabel'>seeds: <span id='seeds'>0</span></p>
+	<p id = 'plantsLabel'>plants: <span id='plants'>0</span></p>
+	<p id = 'eggsLabel'>eggs: <span id='eggs'>0</span></p>
+	
+	<p id = 'pigsLabel'>pigs: <span id='pigs'>0</span></p>
+	<p id = 'cowsLabel'>cows: <span id='cows'>0</span></p>
+	<p id = 'sheepLabel'>sheep: <span id='sheep'>0</span></p>
+	<p id = 'chickensLabel'>chickens: <span id='chickens'>0</span></p>
+	
+</div>
+
+
+<div id = 'interact'>
+	
+	<input type='button' id='buySeed' value='Buy seed (-$0.25)' onclick='buySeed()'></input>
+	
+	<span id = 'growPlantLocation'></span>
+	<span id='sellPlantsLocation'></span>
+	<br>
+	<span id = 'buyEggLocation'></span>
+	<span id = 'hatchEggLocation'></span>
+	
+	<span id = 'slaughterAnimalLocation'></span>
+</div>
+
+<div id='animals'>
+	<div id = 'animalPen'></div>
+</div>
+
+<div id = 'messages' value='messages'>
+</div>
+
+
+</body>
+</html>

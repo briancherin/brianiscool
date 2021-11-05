@@ -1,0 +1,100 @@
+<html>
+  <head>
+    <title>¿Numbers?</title>
+    <link rel="stylesheet" type="type/css" href="numbergamestyle.css">
+  </head>
+  
+  <body>
+    <script src="numbergamescript.js"></script>
+    
+    <div id="scoreboard">Score: <span id="score">0</span></div>
+  
+    <h1>Welcome To tHis GAME!!!!</h>
+    <h2>The GAME!!!! where everything makes sense</h>
+    <h3>To start the GAME!!!! prEss "StarT"</h>
+    <br><br><br><br><br>
+    <button onclick="vis()">StarT</button> <br><br>
+    <div id="startGame">
+      <p>"WOw! You havE started the GAME!!!! <br><br> Congratssz! Now we can StarT the fun!!!!"</p>
+      <p id='firstHint'>hint: to make this easier on you and less stressful on me, please go through each problem starting from the easiest and going to the hardest. Good luck! ;)</p>
+      <button onclick="toggle('superEasy')">superEasy</button>
+      <div id="superEasy">
+        <p>e^(xy) + y^2 = sin(x + y)   Solve for x.</p>
+        <input type='text' id='givenAnswerSuperEasy'></input>
+        <input onclick='submitAnswer("givenAnswerSuperEasy")' type='button' id='submitAnswer'value='Submit'></input>
+      </div>
+      <button onclick="toggle('easier')">easier</button>
+      <div id="easier">
+      <p>e^(xy) + y^2 = sin(x + y)   Solve for ay.</p>
+        <input type='text' id='givenAnswerEasier'></input>
+        <input onclick='submitAnswer("givenAnswerEasier")' type='button' id='submitAnswer' value='Submit'></input>
+      </div>
+      <button onclick="toggle('moreEasy')">moreEasy</button>
+      <div id="moreEasy">
+      <p>e^(xy) + y^2 = sin(x + y)   Solve for y.</p>
+        <input type='text' id='givenAnswerMoreEasy'></input>
+        <input onclick='submitAnswer("givenAnswerMoreEasy")' type='button' id='submitAnswer' value='Submit'></input>
+      </div>
+      <button onclick="toggle('easy')">easy</button>
+      <div id="easy">
+      <p>e^(xy) + y^2 = sin(x + y)   Solve for 2x.</p>
+        <input type='text' id='givenAnswerEasy'></input>
+        <input onclick='submitAnswer("givenAnswerEasy")' type='button' id='submitAnswer' value='Submit'></input>
+      </div>
+      <button onclick="toggle('slightlyeasy')">slightlyeasty</button>
+      <div id="slightlyeasy">
+      <p>e^(xy) + y^2 = sin(x + y)   Find b.</p>
+        <input type='text' id='givenAnswerSlightlyEasy'></input>
+        <input onclick='submitAnswer("givenAnswerSlightlyEasy")' type='button' id='submitAnswer' value='Submit'></input>
+      </div>
+      <button onclick="toggle('noteasy')">noteasy</button>
+      <div id="noteasy">
+      <p>e^(xy) + y^2 = sin(x + y)   Who is karen.</p>
+        <input type='text' id='givenAnswerNotEasy'></input>
+        <input onclick='submitAnswer("givenAnswerNotEasy")' type='button' id='submitAnswer' value='Submit'></input>
+      </div>
+      <button onclick="toggle('slightlymedium')">slightlymedium</button>
+      <div id="slightlymedium">
+      <p>e^(xy) + y^2 = sin(x + y)   Solve for x.</p>
+        <input type='text' id='givenAnswerSlightlyMedium'></input>
+        <input onclick='submitAnswer("givenAnswerSlightlyMedium")' type='button' id='submitAnswer' value='Submit'></input>
+      </div>
+      <button onclick="toggle('supermedium')">supermedium</button>
+      <div id="supermedium">
+      <p>e^(xy) + y^2 = sin(x + y)   Don't.</p>
+        <input type='text' id='givenAnswerSuperMedium'></input>
+        <input onclick='submitAnswer("givenAnswerSuperMedium")' type='button' id='submitAnswer' value='Submit'></input>
+      </div>
+      <button onclick="toggle('medium')">medium</button>
+      <div id="medium">
+      <p>e^(xy) + y^2 = sin(x + y)   Find the equivalent of the golden triangle.</p>
+        <input type='text' id='givenAnswerMedium'></input>
+        <input onclick='submitAnswer("givenAnswerMedium")' type='button' id='submitAnswer' value='Submit'></input>
+      </div>
+      <button onclick="toggle('notmedium')">notmedium</button>
+      <div id="notmedium">
+      <p>e^(xy) + y^2 = sin(x + y)   Solve for sing.</p>
+        <input type='text' id='givenAnswerNotMedium'></input>
+        <input onclick='submitAnswer("givenAnswerNotMedium")' type='button' id='submitAnswer' value='Submit'></input>
+      </div>
+      <button onclick="toggle('superhard')">superhard</button>
+      <div id="superhard">
+      <p>e^(xy) + y^2 = sin(x + y)   Solve for nothing.</p>
+        <input type='text' id='givenAnswerSuperHard'></input>
+        <input onclick='submitAnswer("givenAnswerSuperHard")' type='button' id='submitAnswer' value='Submit'></input>
+      </div>
+      <button onclick="toggle('donteventry')">donteventry</button>
+      <div id="donteventry">
+      <p>e^(xy) + y^2 = sin(x + y)   Solve for w.</p>
+        <input type='text' id='givenAnswerDontEvenTry'></input>
+        <input onclick='submitAnswer("givenAnswerDontEvenTry")' type='button' id='submitAnswer' value='Submit'></input>
+      </div>
+      <button onclick="toggle('winifyougetthis')">winifyougetthis</button>
+      <div id="winifyougetthis">
+      <p>e^(xy) + y^2 = sin(x + y)   If you add up all the numbers, what alphabet letter do you get (hint:chek wikipedia).</p>
+        <input type='text' id='givenAnswerWinifyougetthis'></input>
+        <input onclick='submitAnswer("givenAnswerWinifyougetthis")' type='button' id='submitAnswer' value='Submit'></input>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,153 @@
+<!--flip page upsidedown http://www.webmaster-source.com/2012/04/03/how-to-flip-a-page-upside-down-with-css/ -->
+<html>
+<head>	
+	<link rel='stylesheet' type='text/css' href='mycss.css'>
+	<link href='http://fonts.googleapis.com/css?family=Chivo' rel='stylesheet' type='text/css'>
+	<title>Hello.</title>
+	
+</head>
+<body onload="document.body.style.background=readCookie('color')">
+	<script src = "brianJAVASCRIPT.js"> </script>
+	
+	
+	<script>
+	
+		function lalalalala() {
+				var elem = document.getElementById("animate");
+				var elem2 = document.getElementById("animate2");
+				var elem3 = document.getElementById("animate3");
+				var elem4 = document.getElementById("animate4");
+				var magicbutton = document.getElementById("magicbutton");
+				var pos = 0;
+				pos2=350;
+				pos3=350;
+				pos32 = 0;
+				pos4=350;
+				pos42 = 0;
+				var id = setInterval(frame, 5);
+				
+				function frame(){
+					if (pos == 350) {
+						clearInterval(id);
+					} else {
+						pos++;
+						pos2--;
+						pos3--;
+						pos32++;
+						pos4--;
+						pos42++;
+						
+						elem.style.top=pos + "px";
+						elem.style.left=pos + "px";
+						elem2.style.top=pos2 + "px";
+						elem2.style.left=pos2 + "px";
+						
+						elem3.style.top=pos3 + "px";
+						elem3.style.left=pos32 + "px";
+						
+						elem4.style.left = pos4 + "px";
+						elem4.style.top = pos42 + "px";
+						
+						magicbutton.style.left = pos + "px";
+						magicbutton.style.top = pos + "px";
+					}
+				}
+			}
+		</script>
+		
+		<style>
+			#container {
+				width:400px;
+				height:400px;
+				position:relative;
+				background:skyblue;
+			}
+			
+			#animate {
+				width:50px;
+				height:50px;
+				position:absolute;
+				background-color:darkseagreen;
+			}
+			
+			#animate2 {
+				width:50px;
+				height:50px;
+				position:absolute;
+				left:350;
+				top:350;
+				background-color:darkgreen;
+			}
+			#animate3 {
+				width:50px;
+				height:50px;
+				position:absolute;
+				top:350;
+				background-color:lightgreen;
+			}
+			#animate4 {
+				width:50px;
+				height:50px;
+				position:absolute;
+				left:350;
+				background-color:green;
+			}
+		
+		</style>
+	
+	
+	
+<table id = 'navbar'>
+	<tr>
+		<td id='navbar-td'> <a href = "index.html"> Home </a> </td>
+		<td id='navbar-td'> <a href = "game.html"> Game </a> </td>
+		<td id='navbar-td'> <a href = "hello.html"> Hello </a> </td>
+		<td id='navbar-td'> <a href = "tellmeaboutit.html"> Tell me about it!</a></td>
+	</tr>
+</table>
+
+<input type='button' onclick='red()'></input>  
+
+<div id='hoverDIV' onmouseover='goodbye()'> </div>
+<div id='undoHoverDIV' onmouseover='undoGoodbye()'><br><br> </div>
+
+
+<br>
+<input type='button' onclick='getName()'></input>
+<input type='button'></input>
+
+<h1 id='hello'>He<span id='firstL'>l</span>lo.</h>
+
+<input type='button'></input>
+<br>
+<input type='button' onclick='randomColour()'></input>
+<input type='button' onclick='popupFun()'></input>
+
+<input type='button' id='resetButton' onclick='history.go(0)'></input>
+
+
+<br>
+<br><br>
+<button id="magicbutton" onclick="lalalalala()">?</button><br>
+<div id="container">
+	<div id="animate"></div>
+	<div id="animate2"></div>
+	<div id="animate3"></div>
+	<div id="animate4"></div>
+</div>
+<br><br>
+
+<input type='button' onclick='makeMarquee()'></input>
+<span id='toMove'></span>
+
+<br>
+
+<input type='button'></input>
+<input type='button'></input>
+<input type='button'></input>
+<br><br>
+<a href='tgame.html' style="font-size:7%">t</a>
+<br><br>
+<a href='beehaven/beehaven.html' style="font-size:5%">b</a>
+</body>
+</html>

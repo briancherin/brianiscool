@@ -1,0 +1,10 @@
+#foo {
+ position:absolute;
+ left:0px;
+ top:8em;
+ width:5em;
+ height:5em;
+ line-height:3em;
+ background:green;
+ border:3px solid black;
+}

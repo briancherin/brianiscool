@@ -1,0 +1,19 @@
+#startGame {
+  visibility:hidden;
+}
+
+#firstHint {
+  font-size:5px;
+}
+
+#supereasy, #easier, #easy, #moreEasy, #slightlyeasy, #noteasy, #slightlymedium, #supermedium, #medium, #notmedium, #superhard, #donteventry, #winifyougetthis {
+  visibility:hidden;
+  color:green;
+}
+
+
+#scoreboard {
+  position: fixed;
+  right: 300px;
+  top: 50px;
+}

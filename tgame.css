@@ -1,0 +1,84 @@
+#title{
+	text-align: center;
+	font-size: 20px;
+}
+
+#hungerBar {
+	height: 30px;
+	width: 145px;
+	border: 1px solid;
+	
+	position: fixed;
+	right: 200px;
+}
+
+#hungerProgressBar {
+	height: 30px;
+	width: 145px;
+	background-color: grey;
+	border: 1px solid;
+
+	position: fixed;
+	right: 200px;
+	
+	text-align: center;
+	font-weight: bold;
+	font-size: 25px;
+}
+
+
+#inventory{
+	height: 90%;
+	width: 150px;
+	
+	position:fixed;
+	top: 30px;
+    right: 20px;
+	
+	border-color:black;
+	border-width:1px;
+	color:black;
+	font-size:16px;
+	border-style:solid; 
+	
+	overflow:auto;
+	
+	padding:5px;
+}
+
+#interact{
+	position:relative;
+	left: 210px;
+	height: 90%;
+	width:600px;
+}
+
+#messages{
+	height:90%;
+	width:200px;
+
+	position:fixed;
+	top:30px;
+	
+	font-size: 16px;
+	overflow:auto;
+	line-height:200%;
+}
+
+p{
+	font-size:16px;
+}
+
+#animals{
+	height: 200px;
+	width: 800px;
+	border:solid;
+	left: 200px;
+	top:300px;
+	position: relative;
+	overflow:scroll;
+}
+
+#animals img{
+	width: 50px;
+}
